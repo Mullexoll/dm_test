@@ -45,8 +45,7 @@ class AppBloc extends Bloc<AppEvent, AppState> {
     } catch (e) {
       debugPrint(e.toString());
       error = e.toString();
+      emit(AppLoaded(products: products, error: error));
     }
-
-    emit(AppLoaded(products: products, error: error));
   }
 }

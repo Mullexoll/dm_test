@@ -88,6 +88,8 @@ class _ProductCardsState extends State<ProductCards> {
 
   @override
   Widget build(BuildContext context) {
+    print('image ${product1?.photoUrl} ${product2?.photoUrl}');
+
     double screenWidth = MediaQuery.of(context).size.width;
     double containerWidth = (screenWidth - 45) / 2;
 
